@@ -48,3 +48,12 @@ struct TipsView : View{
     
     
 }
+
+extension Image {
+    init(_ str: String) {
+        self.init(uiImage:
+             UIImage(named: str) ?? UIImage(named: "Some default image")!
+        )
+    }
+}
+
